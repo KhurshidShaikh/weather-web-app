@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar bg-primary navbar-expand{-sm|-md|-lg|-xl|-xxl}"> <!--- bg-body-tertiary --> <!-- for white bg-->
+        <div class="container-fluid" id="container">
+
+            <img src="https://icon-library.com/images/weather-app-icon/weather-app-icon-20.jpg" width="55px"
+                height="50px">
+            <a class="navbar-brand" href="#">Weather app</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#forecasttable">Forecast</a>
+                    </li>
+                  
+
+                </ul>
+            
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+      <nav class="navbar bg-body-primary">
+        <div class="container-fluid d-flex justify-content-center row-cols-md-3">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search"  id="cityname"   placeholder="Search for a city" aria-label="Search">
+            <button class="btn btn-outline-success btn btn-warning"  id="search"  type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center d-flex justify-content-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm mt-5" >
+              <div class="card-header py-3" id="cardheader">
+                <i class="fa-solid fa-location-dot"> </i><h4 class="my-0 fw-normal" id="Name">Mumbai</h4>
+              </div>
+              <div class="card-body">
+                <i id="icon"></i>
+                <!-- <i class="fa-solid fa-cloud-showers-heavy"></i>     <i class="fa-solid fa-cloud-sun"></i> -->
+                <h1 class="card-title pricing-card-title" id="Temprature">30<small class="text-body-secondary fw-light" style="color:white">&#8451</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                   <li><span id="condition"></span></li>
+                  <li>Relative Humidity <span id="Humidity"></span></li>
+                  <li>Min <span id="Min"></span></li>
+                  <li>Max <span id="Max"></span></li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn btn-info" id="day" >Today</button>
+              </div>
+            </div>
+          </div>
+         
+      
+        </div>
+    
+        <h2 class="display-6 text-center mb-4" style="font-weight: bold;">7 Days Forecast</h2>
+    
+
+
+        <div class="table-responsive table-responsive-sm w-100" id="forecasttable">
+        
+          <table class="table">
+            <thead class="table-dark">
+             <th> Day</th> 
+             <th>Temperature</th>
+             <th>Condition</th>
+             <th>Min</th>
+             <th>Max</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start forcastdays">day1</th>
+                <td class="tempforecast">1</td>
+                <td class="conditionforecast">2</td>
+                <td class="minforecast">3</td>
+                <td class="maxforecast">4</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start forcastdays">day2</th>
+                <td class="tempforecast">1</td>
+                <td class="conditionforecast">2</td>
+                <td class="minforecast">3</td>
+                <td class="maxforecast">4</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start forcastdays">day3</th>
+                <td class="tempforecast">1</td>
+                <td class="conditionforecast">2</td>
+                <td class="minforecast">3</td>
+                <td class="maxforecast">4</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start forcastdays">day4</th>
+                <td class="tempforecast">1</td>
+                <td class="conditionforecast">2</td>
+                <td class="minforecast">3</td>
+                <td class="maxforecast">4</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start forcastdays">day5</th>
+                <td class="tempforecast">1</td>
+                <td class="conditionforecast">2</td>
+                <td class="minforecast">3</td>
+                <td class="maxforecast">4</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start forcastdays">day6</th>
+                <td class="tempforecast">1</td>
+                <td class="conditionforecast">2</td>
+                <td class="minforecast">3</td>
+                <td class="maxforecast">4</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start forcastdays">day7</th>
+                <td class="tempforecast">1</td>
+                <td class="conditionforecast">2</td>
+                <td class="minforecast">3</td>
+                <td class="maxforecast">4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+        <script src="https://kit.fontawesome.com/01a09e6d25.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

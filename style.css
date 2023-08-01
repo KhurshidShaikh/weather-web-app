@@ -1,0 +1,32 @@
+main{
+    /* margin-top: 20px; */
+   background-image: url('cloud-blue-sky.jpg');
+   background-size: cover;
+   background-position: center;
+   opacity:0.8;
+   background-repeat: no-repeat;
+}
+
+.card{
+    background-color:black;
+    color:white;
+    opacity: 0.6;
+}
+
+.table-responsive{
+    background-color:transparent !important;
+    opacity: 0.7;
+}
+.card{
+    opacity: 0.9;
+}
+
+.card-body i{
+    font-size:3rem;;
+}
+td{
+    font-weight: bold;
+}
+#cardheader i,h4{
+font-size:25px;
+}
